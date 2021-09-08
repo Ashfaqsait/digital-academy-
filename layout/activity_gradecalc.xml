@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    tools:context=".gradecalc">
+
+    <TextView
+        android:id="@+id/dpView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Computer Science Engineering"
+        android:textColor="#0D0D0E"
+        android:textColorHighlight="#0E73E1"
+        android:textColorLink="#E1DBDB"
+        android:textSize="20sp"
+        android:textStyle="italic"
+
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+    <!-- android:text="Welcome !!!" -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#D53232"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your Semester : "
+        android:textColor="#0D0D0E"
+        android:textColorHighlight="#0E73E1"
+        android:textColorLink="#E1DBDB"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <Spinner
+        android:id="@+id/selsemsp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <!--android:prompt="@string/sem_prompt" -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#D53232"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/sub1View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 1 : "
+                android:textColor="#0D0D0E"
+                android:textColorHighlight="#0E73E1"
+                android:textColorLink="#E1DBDB"
+                android:textSize="20sp"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp" />
+            <Spinner
+                android:id="@+id/sub1sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sub2View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 2 : "
+                android:textColor="#0D0D0E"
+                android:textColorHighlight="#0E73E1"
+                android:textColorLink="#E1DBDB"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+            <Spinner
+                android:id="@+id/sub2sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sub3View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 3 : "
+                android:textColor="#0D0D0E"
+                android:textColorHighlight="#0E73E1"
+                android:textColorLink="#E1DBDB"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+            <Spinner
+                android:id="@+id/sub3sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sub4View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 4 : "
+                android:textColor="#0D0D0E"
+                android:textColorHighlight="#0E73E1"
+                android:textColorLink="#E1DBDB"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+            <Spinner
+                android:id="@+id/sub4sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sub5View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 5 : "
+                android:textColor="#0D0D0E"
+                android:textColorHighlight="#0E73E1"
+                android:textColorLink="#E1DBDB"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+            <Spinner
+                android:id="@+id/sub5sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sub6View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 6 : "
+                android:textColor="#0D0D0E"
+                android:textColorHighlight="#0E73E1"
+                android:textColorLink="#E1DBDB"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+            <Spinner
+                android:id="@+id/sub6sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sub7View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 7 : "
+                android:textColor="#0D0D0E"
+                android:textColorHighlight="#0E73E1"
+                android:textColorLink="#E1DBDB"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+            <Spinner
+                android:id="@+id/sub7sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginStart="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sub8View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 8 : "
+                android:textColor="#0D0D0E"
+                android:textColorHighlight="#0E73E1"
+                android:textColorLink="#E1DBDB"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+            <Spinner
+                android:id="@+id/sub8sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sub9View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 9 : "
+                android:textColor="#0D0D0E"
+                android:textColorHighlight="#0E73E1"
+                android:textColorLink="#E1DBDB"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+            <Spinner
+                android:id="@+id/sub9sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sub10View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 10 : "
+                android:textColor="#0D0D0E"
+                android:textColorHighlight="#0E73E1"
+                android:textColorLink="#E1DBDB"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+            <Spinner
+                android:id="@+id/sub10sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+    <!-- ........................................... -->
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calculate gpa"
+        android:textSize="20sp"
+        app:backgroundTint="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <!-- ........................................... -->
+
+    <TextView
+        android:id="@+id/odpView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To see other department grades : "
+        android:textColor="#0D0D0E"
+        android:textColorHighlight="#0E73E1"
+        android:textColorLink="#E1DBDB"
+        android:textSize="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
+    <Button
+        android:id="@+id/odpbtn"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Click here"
+        android:textSize="10sp"
+        app:backgroundTint="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

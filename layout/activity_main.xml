@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firstpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+    <!-- 1DDFF8 -->
+
+
+
+    <Button
+        android:id="@+id/studentbutton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="student"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:backgroundTint="#E5E80B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/facultybutton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="faculty"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:backgroundTint="#E5E80B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/adminbutton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="admin"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:backgroundTint="#E5E80B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7"
+        android:enabled="false"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="230dp"
+        app:srcCompat="@drawable/dacademypic"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="127dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <TextView
+            android:id="@+id/sars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal"
+            android:text="SARS"
+            android:textAlignment="center"
+            android:textSize="60dp"
+            android:textStyle="italic"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.92"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
