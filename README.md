@@ -1,1 +1,1 @@
-# digital-academy-
+# Digital-Academy
